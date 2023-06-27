@@ -235,6 +235,7 @@ sai_status_t Meta::remove(
         _In_ sai_object_id_t object_id)
 {
     SWSS_LOG_ENTER();
+    SWSS_LOG_TIMER("remove");
 
     sai_status_t status = meta_sai_validate_oid(object_type, &object_id, SAI_NULL_OBJECT_ID, false);
 
